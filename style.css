@@ -1,0 +1,37 @@
+* {
+    font-family: 'Mukta', sans-serif;
+}
+
+section.wrap {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.right {
+    text-align: right;
+}
+
+tr {
+    border-bottom: 1px solid gray;
+}
+
+td {
+    padding: 2px 10px;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 600px;
+}
+
+thead td {
+    background-color: #b7eeff;
+}
+
+td.name {
+    font-size: 10px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,1 +1,26 @@
-<h1>test</h1>
+<html>
+    <head>
+        <title>Performance API test</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:400,700" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <body>
+        <section class="wrap">
+            <h2>Detected network speed: <span id="speed"></span> kbps</h2>
+            <h3>Entries parsed</h3>
+            <p>The following entries are the ones available from <code>window.performance.getEntries()</code> during execution of the javascript run before end of <b>body</b> tag.</b></p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>type</td>
+                        <td>name</td>
+                        <td class="right">size</td>
+                        <td class="right">dl time</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <script src="./script.js"></script>
+        </section>
+    </body>
+</html>
