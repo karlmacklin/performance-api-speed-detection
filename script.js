@@ -15,8 +15,6 @@ const listEntries = () => {
   window.performance.getEntries().forEach(renderEntry)
 }
 
-listEntries()
-
 const networkSpeedDetect = () => {
   let totalSize = 0
   let totalTime = 0
@@ -46,4 +44,7 @@ const networkSpeedDetect = () => {
   })
 }
 
-networkSpeedDetect()
+document.addEventListener('DOMContentLoaded', () => {
+  listEntries()
+  networkSpeedDetect()
+})
