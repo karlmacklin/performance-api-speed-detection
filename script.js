@@ -37,6 +37,13 @@ const networkSpeedDetect = () => {
 
   const kbitsPerSecond = Math.round(totalSize / totalTime * 8)
   document.querySelector("#speed").innerHTML = kbitsPerSecond
+  const ul = document.querySelector('ul')
+  validEntries.forEach(entry => {
+    const entryStr = `
+      <li>${entry.name}</li>
+    `
+    ul.insertAdjacentHTML('beforeend', entryStr)
+  })
 }
 
 networkSpeedDetect()
